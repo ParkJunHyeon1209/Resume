@@ -1,0 +1,12 @@
+#wrap {
+    background-color: #F9EACB;
+}
+
+.layout-box {
+    max-width: 1280px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 615px 1fr 300px;
+    margin: 0 auto;
+}
