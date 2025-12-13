@@ -30,15 +30,46 @@
               />
             </div>
             <section class="profile-name-tag">
-              <h1>Park Jun Hyeon</h1>
-              <h2>MBTI: INTP</h2>
-              <img
-                src="resume-image/이름-배경.png"
-                alt="별 달린 핑크색 이름 배경"
-              />
+              <div class="profile-text">
+                <h1 class="my_name">Park Jun Hyeon</h1>
+                <h2 class="my_mbti">MBTI: INTP</h2>
+              </div>
+              <div class="name-bh-container">
+                <img
+                  class="name-bg"
+                  src="resume-image/이름-배경.png"
+                  alt="별 달린 핑크색 이름 배경"
+                />
+              </div>
             </section>
             <div class="contact">
-              Contact: pjh140123@gmail.com, tel: 010 - 9543 - 8743
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-20 0 640 180"
+                width="100%"
+                height="120"
+                preserveAspectRatio="none"
+              >
+                <defs>
+                  <!-- 곡선 경로 -->
+                  <path
+                    id="contact-curve"
+                    d="M 20 100 Q 320 170 620 100"
+                    fill="none"
+                  />
+                </defs>
+
+                <!-- 곡선을 따라가는 텍스트 -->
+                <text fill="#5a2b4a" font-size="24" font-weight="500">
+                  <textPath
+                    href="#contact-curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                  >
+                    Contact: pjh140123@gmail.com · tel : 010 - 9543 - 8743
+                  </textPath>
+                </text>
+              </svg>
             </div>
           </div>
           <div class="header-down-icon">
@@ -57,7 +88,7 @@
           </div>
         </header>
 
-        <main>
+        <main class="contents-list">
           <section class="main-about-me">
             <div class="about-me-text">
               <h2>About me</h2>
@@ -90,19 +121,19 @@
             <h2>Skills</h2>
             <div class="HTML-CSS">
               <h3>HTML & CSS</h3>
-              <progress max="100" value="80" class="html pink">80%</progress>
+              <progress max="100" value="80" class="gage html">80%</progress>
             </div>
             <div class="JavaScript">
               <h3>JavaScript</h3>
-              <progress max="100" value="50" class="js blue">50%</progress>
+              <progress max="100" value="50" class="gage js">50%</progress>
             </div>
             <div class="jQuery">
               <h3>jQuery</h3>
-              <progress max="100" value="30" class="jquery pink">50%</progress>
+              <progress max="100" value="30" class="gage jquery">50%</progress>
             </div>
             <div class="BackLanguage">
               <h3>BackLanguage(Java,Python)</h3>
-              <progress max="100" value="60" class="backlanguage blue">
+              <progress max="100" value="60" class="gage backlanguage">
                 60%
               </progress>
             </div>
@@ -137,20 +168,26 @@
             <img src="resume-image/지렁이.png" alt="초록색 애벌레" />
           </div>
         </main>
+      </div>
+      <!-- .layout-box end -->
 
-        <footer>
-          <h3 class="footer-date">&copy;2025.12.12</h3>
+      <footer>
+        <div class="write-information">
+          <h3 class="footer-date semi-bold">&copy;2025.12.12</h3>
           <p class="footer-name">PJH; Frontend Developer</p>
+        </div>
 
+        <div class="contact-container">
           <h3 class="footer-contact semi-bold">Contact</h3>
           <p class="footer-email">e-mail: pjh140123@gmail.com</p>
           <p class="footer-git">git: https://github.com/ParkJunHyeon1209</p>
+        </div>
 
+        <div class="footer-goal">
           <h3 class="foot-goal semi-bold">Goal</h3>
           <p>Make interfaces that feel natural to use.</p>
-        </footer>
-      </div>
-      <!-- .layout-box end -->
+        </div>
+      </footer>
     </div>
     <!-- #wrap end -->
   </body>
