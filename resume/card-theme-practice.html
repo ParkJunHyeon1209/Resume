@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카드만들기연습</title>
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f9eacb;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+      }
+      .card-wrap {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        /* overflow: hidden; */
+      }
+      .card {
+        width: 100%;
+        position: relative;
+        border: 3px solid;
+        border-radius: 8px;
+        background-color: white;
+      }
+      .green {
+        background-color: #21a33c;
+      }
+      .purple {
+        background-color: #be95c4;
+      }
+      .red {
+        background-color: #fe5037;
+      }
+      .orange {
+        background-color: #f69838;
+      }
+      .orange2 {
+        background-color: #ffc513;
+      }
+      .contents {
+        background-color: white;
+        margin: 10px;
+      }
+      .contents-head-back {
+        height: 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      .back-card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 10px;
+        right: -14px;
+        z-index: -1;
+        border: 2px solid;
+        border-radius: 8px;
+        background-color: white;
+      }
+      .color-back-card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 10px;
+        right: 14px;
+        z-index: -1;
+        border: 2px solid;
+        border-radius: 8px;
+      }
+      .last-card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 20px;
+        right: 24px;
+        z-index: -2;
+        border: 2px solid;
+        border-radius: 8px;
+      }
+
+      .under-card {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        bottom: -10%;
+        left: 10%;
+        z-index: -1;
+        border: 2px solid black;
+        border-radius: 8px;
+      }
+      .under-card2 {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        bottom: -20%;
+        left: 20%;
+        z-index: -2;
+        border: 2px solid black;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 2중첩 -->
+    <div class="card-wrap">
+      <div class="card green">
+        <div class="contents">컨텐츠카드내용</div>
+        <div class="back-card"></div>
+      </div>
+    </div>
+
+    <!-- 3중첩 -->
+    <div class="card-wrap">
+      <div class="card">
+        <div class="contents">
+          <div class="contents-head-back purple"></div>
+          컨텐츠 내용컨텐츠 내용컨텐츠 내용컨텐츠 내용컨텐츠 내용컨텐츠
+          내용컨텐츠 내용컨텐츠 내용컨텐츠 내용컨텐츠 내용컨텐츠 내용컨텐츠
+          내용컨텐츠 내용
+        </div>
+        <div class="color-back-card purple"></div>
+        <div class="last-card purple"></div>
+      </div>
+    </div>
+
+    <!-- red -->
+    <div class="card-wrap">
+      <div class="card">
+        <div class="contents">
+          <div class="contents-head-back red"></div>
+          컨텐츠카드내용
+        </div>
+        <div class="color-back-card red"></div>
+        <div class="last-card red"></div>
+      </div>
+    </div>
+
+    <!-- 아래모양 카드 -->
+    <div class="card-wrap">
+      <div class="card orange">
+        <div class="contents">컨텐츠카드내용</div>
+        <div class="under-card orange2"></div>
+        <div class="under-card2 orange2"></div>
+      </div>
+    </div>
+  </body>
+</html>

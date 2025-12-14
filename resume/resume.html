@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PJH's remuse</title>
+    <meta
+      name="description"
+      content="UX를 고려한 UI 구현을 지향하는 프런트엔드 예비 개발자 박준현의 포트폴리오입니다."
+    />
+    <meta name="author" content="박준현" />
+
+    <title>Park Jun Hyeon | Frontend Developer Portfolio</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -13,12 +19,17 @@
         <header>
           <div class="header-up-icon">
             <div class="header-up-left">
-              <img src="resume-image/점.png" alt="점으로 만든 메뉴 아이콘" />
+              <img
+                src="resume-image/점.png"
+                alt="점으로 만든 메뉴 아이콘"
+                aria-hidden="true"
+              />
             </div>
             <div class="header-up-right">
               <img
                 src="resume-image/꽃.png"
                 alt="초록꽃잎과 가운데는 노란색인 꽃"
+                aria-hidden="true"
               />
             </div>
           </div>
@@ -26,7 +37,7 @@
             <div class="profile-photo-circle">
               <img
                 src="resume-image/프로필사진누끼반전.png"
-                alt=""
+                alt="내 프로필 사진"
               />
             </div>
             <section class="profile-name-tag">
@@ -34,7 +45,7 @@
                 <h1 class="my_name">Park Jun Hyeon</h1>
                 <h2 class="my_mbti">MBTI: INTP</h2>
               </div>
-              <div class="name-bh-container">
+              <div class="name-bg-container">
                 <img
                   class="name-bg"
                   src="resume-image/이름-배경.png"
@@ -77,12 +88,14 @@
               <img
                 src="resume-image/방패.png"
                 alt="노란배경에 연보라 별이 박힌 아이콘"
+                aria-hidden="true"
               />
             </div>
             <div class="header-down-right">
               <img
                 src="resume-image/버튼.png"
                 alt="흰색 배경 빨강하트 노랑하트 초록하트 아이콘"
+                aria-hidden="true"
               />
             </div>
           </div>
@@ -90,60 +103,125 @@
 
         <main class="contents-list">
           <section class="main-about-me">
-            <div class="about-me-text">
-              <h2>About me</h2>
-              <p>
-                프론트엔드 개발자 취업을 희망하는 예비 개발자입니다. 웹 화면을
-                통해 서비스를 경험하는 과정에 흥미를 느껴 프론트엔드를
-                선택했습니다. 단순히 화면을 구현하는 것이 아닌 UX를 고려하여
-                디자인과 기능이 조화를 이루는 UI를 선호합니다. 개발자의 개성이
-                드러나지만, UX를 해치지 않는 것을 목표로 하고 있습니다.
-              </p>
+            <div class="card-wrap left">
+              <div class="btn-container green">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle white"></div>
+              </div>
+              <div class="card green top-left-radius-none">
+                <div class="contents">
+                  <h2>About me</h2>
+                  <p>
+                    프런트엔드 개발자 취업을 희망하는 예비 개발자입니다. 웹
+                    화면을 통해 서비스를 경험하는 과정에 흥미를 느껴
+                    프런트엔드를 선택했습니다.
+                  </p>
+                  <p>
+                    단순히 화면을 구현하는 것이 아닌 UX를 고려하여 디자인과
+                    기능이 조화를 이루는 UI를 선호합니다. 개발자의 개성이
+                    드러나지만, UX를 해치지 않는 것을 목표로 하고 있습니다.
+                  </p>
+                </div>
+              </div>
+              <!-- card end -->
+            </div>
+            <!-- card-wrap end -->
+            <div class="shadow">
+              <div class="card-wrap left">
+                <div class="btn-container white">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card">
+                  <div class="shadow-contents"></div>
+                </div>
+              </div>
             </div>
           </section>
+          <!-- main-about-me end -->
+
           <section class="main-experience">
-            <h2>Experience</h2>
-            <ul class="experience-list">
-              <li>
-                <p>2025.11 ~ 2026.04:</p>
-                <p>ESTsoft 11기 프론트엔드 개발자 부트캠프 참여</p>
-              </li>
-              <li>
-                <p>2023.09 ~ 2023.12:</p>
-                <p>
-                  학창 시절 캡스톤 디자인 프로젝트에서 아두이노 개발, UI 일부를
-                  구현
-                </p>
-              </li>
-            </ul>
+            <div class="three-depth-card">
+              <div class="first-depth-card">
+                <div class="card-contents">
+                  <h2 class="experience">Experience</h2>
+                  <ul class="experience-list">
+                    <li>
+                      <p>2025.11 ~ 2026.04:</p>
+                      <p>ESTsoft 11기 프런트엔드 개발자 부트 캠프 참여</p>
+                    </li>
+                    <li>
+                      <p>2023.09 ~ 2023.12:</p>
+                      <p>
+                        학창 시절 캡스톤 디자인 프로젝트에서 아두이노 개발, UI
+                        일부를 구현
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="second-depth-card"></div>
+                <div class="third-depth-card"></div>
+              </div>
+            </div>
           </section>
+          <!-- main-experience end -->
           <section class="main-skills">
             <h2>Skills</h2>
-            <div class="HTML-CSS">
+            <article class="publishing">
               <h3>HTML & CSS</h3>
-              <progress max="100" value="80" class="gage html">80%</progress>
-            </div>
-            <div class="JavaScript">
+              <progress
+                max="100"
+                value="80"
+                class="gage html"
+                aria-label="HTML 및 CSS 숙련도"
+              >
+                80%
+              </progress>
+            </article>
+            <article class="javascript">
               <h3>JavaScript</h3>
-              <progress max="100" value="50" class="gage js">50%</progress>
-            </div>
-            <div class="jQuery">
+              <progress
+                max="100"
+                value="50"
+                class="gage js"
+                aria-label="JavaScript 숙련도"
+              >
+                50%
+              </progress>
+            </article>
+            <article class="jquery">
               <h3>jQuery</h3>
-              <progress max="100" value="30" class="gage jquery">50%</progress>
-            </div>
-            <div class="BackLanguage">
+              <progress
+                max="100"
+                value="30"
+                class="gage jq"
+                aria-label="jQuery 숙련도"
+              >
+                50%
+              </progress>
+            </article>
+            <article class="backlanguage">
               <h3>BackLanguage(Java,Python)</h3>
-              <progress max="100" value="60" class="gage backlanguage">
+              <progress
+                max="100"
+                value="60"
+                class="gage back"
+                aria-label="Python 및 Java 숙련도"
+              >
                 60%
               </progress>
-            </div>
+            </article>
           </section>
-          <section class="main-experience-img">
+          <!-- main-skills -->
+          <div class="main-experience-img">
             <div class="image-container"></div>
             <div class="practice-image"></div>
-          </section>
+          </div>
+
           <section class="main-strength">
-            <h3>Strength</h3>
+            <h2>Strength</h2>
             <p>모르는 부분은 솔직하게 질문하고, 아는 부분은 공유하려 노력</p>
             <p>
               작업을 시작하면 마무리 지으려고 노력하며, 작은 기능까지 구현하려
@@ -152,8 +230,9 @@
             <p>왜 이런 구조가 필요한지 이해하며 구현하는 학습 방식</p>
             <div class="main-strength-deco"></div>
           </section>
+          <!-- main-strength-end -->
           <section class="main-education">
-            <h3>Education</h3>
+            <h2>Education</h2>
             <div class="education-text">
               <p class="university">
                 Daejeon University <span>2019 ~ 2025</span>
@@ -164,29 +243,39 @@
               </p>
             </div>
           </section>
-          <div class="larva">
-            <img src="resume-image/지렁이.png" alt="초록색 애벌레" />
+          <!-- main-education end -->
+
+          <div class="monster-ball">
+            <img
+              src="resume-image/찌리리공.png"
+              alt="찌리리공(포켓몬스터 포켓몬)"
+            />
           </div>
         </main>
       </div>
       <!-- .layout-box end -->
 
       <footer>
-        <div class="write-information">
+        <section class="write-information">
           <h3 class="footer-date semi-bold">&copy;2025.12.12</h3>
           <p class="footer-name">PJH; Frontend Developer</p>
-        </div>
+        </section>
 
-        <div class="contact-container">
+        <section class="contact-container">
           <h3 class="footer-contact semi-bold">Contact</h3>
-          <p class="footer-email">e-mail: pjh140123@gmail.com</p>
-          <p class="footer-git">git: https://github.com/ParkJunHyeon1209</p>
-        </div>
+          <address>
+            <p class="footer-email">e-mail: pjh140123@gmail.com</p>
+            <p class="footer-git">
+              GitHub:
+              <a href="https://github.com/ParkJunHyeon1209">ParkJunHyeon1209</a>
+            </p>
+          </address>
+        </section>
 
-        <div class="footer-goal">
+        <section class="footer-goal">
           <h3 class="foot-goal semi-bold">Goal</h3>
           <p>Make interfaces that feel natural to use.</p>
-        </div>
+        </section>
       </footer>
     </div>
     <!-- #wrap end -->

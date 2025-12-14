@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f9eacb;
+      }
+      .card-wrap {
+        width: 500px;
+        margin: 10px auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+      .card {
+        width: 100%;
+        position: relative;
+        border: 3px solid;
+        border-radius: 8px;
+        background-color: white;
+        padding: 20px;
+      }
+      .orange {
+        background-color: #f69838;
+      }
+      .orange2 {
+        background-color: #ffc513;
+      }
+      .green {
+        background-color: #21a33c;
+      }
+      .red {
+        background-color: #fe5037;
+      }
+      .yellow {
+        background-color: #ffc513;
+      }
+      .white {
+        background-color: white;
+      }
+      .contents {
+        background-color: white;
+        padding: 10px;
+        height: 235px;
+      }
+
+      .left {
+        position: relative;
+        align-items: flex-start;
+        z-index: -1;
+      }
+      .btn-container {
+        position: absolute;
+        padding: 0 20px;
+        top: -47px;
+        left: 0;
+        z-index: 1;
+        width: 30%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 3px solid;
+        border-bottom: none;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      .circle {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+        border-radius: 50%;
+      }
+      .green-card {
+        position: relative;
+      }
+      .shadow {
+        position: absolute;
+        top: 5px;
+        left: 34%;
+        z-index: -2;
+      }
+      .bd-rd {
+        border-top-left-radius: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 아래모양 카드 -->
+    <div class="card-wrap">
+      <div class="card orange">
+        <div class="contents">
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+        </div>
+      </div>
+      <div class="under-card orange2"></div>
+      <div class="under-card2 orange2"></div>
+    </div>
+
+    <!-- 초록 버튼 있는 버전 -->
+    <div class="green-card">
+      <div class="card-wrap left">
+        <div class="btn-container green">
+          <div class="circle red"></div>
+          <div class="circle yellow"></div>
+          <div class="circle white"></div>
+        </div>
+        <div class="card green bd-rd">
+          <div class="contents">
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+            컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용 컨텐츠카드내용
+          </div>
+        </div>
+      </div>
+
+      <!-- 쉐도우버전 -->
+      <div class="shadow">
+        <div class="card-wrap left">
+          <div class="btn-container white">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="card">
+            <div class="contents"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

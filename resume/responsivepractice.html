@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 연습</title>
+    <style>
+      /* 1194일때 아래 사이즈가 풀로 차고 800일때 사이즈 다시 줄어듦 */
+
+      #wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .big-size {
+        background-color: lavenderblush;
+      }
+      .small-size {
+        width: 20%;
+        background-color: lavenderblush;
+        display: flex;
+        flex-direction: column;
+        transition: width 0.3s;
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: blueviolet;
+        transform: translateX(0);
+        transition: transform 0.3s;
+      }
+
+      @media all and (max-width: 1194px) {
+        .small-size {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          justify-content: space-between;
+        }
+        .circle {
+          transform: translateX(100%);
+        }
+      }
+
+      @media all and (max-width: 800px) {
+        .small-size {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+        }
+        .circle {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="big-size">
+        <p>안녕</p>
+      </header>
+      <section class="small-size">
+        <div class="set">
+          <div class="circle"></div>
+          <p>Yes</p>
+        </div>
+        <p>No</p>
+      </section>
+    </div>
+  </body>
+</html>
