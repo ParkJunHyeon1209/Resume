@@ -30,6 +30,23 @@
 	background-color: white;
 }
 
+* {
+	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+h2 {
+	font-size: clamp(22px, 4.5vw, 44px);
+	font-weight: 600;
+}
+
+h3 {
+	font-size: clamp(12px, 2vw, 24px);
+}
+
+p {
+	font-size: clamp(12px, 2vw, 24px);
+}
+
 #wrap {
 	background: url(resume-image/십자배경-white.png) repeat #F9EACB;
 	background-size: 40px;
@@ -51,15 +68,18 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 
 .header-up-left img {
 	width: 50%;
+	animation: no-moving-rotate 10s linear infinite;
 }
 
 .header-up-right img {
 	width: 40%;
 	margin-left: 60%;
+	animation: no-moving-rotate 5s linear infinite;
 }
 
 /* 헤더 프로필부분 */
@@ -107,8 +127,6 @@ header {
 
 .my_mbti {
 	text-align: center;
-	font-size: clamp(20px, 4.5vw, 44px);
-	font-weight: 600;
 }
 
 .name-bg {
@@ -128,11 +146,12 @@ header {
 
 .header-down-left>img {
 	width: 50%;
+	animation: no-moving-rotate 10s linear infinite;
 }
 
 .header-down-right>img {
-	width: 50%;
-	margin-left: 50%;
+	width: 40%;
+	margin-left: 60%;
 }
 
 /* 메인 그리드 */
@@ -163,7 +182,7 @@ header {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	border: 3px solid;
+	border: 4px solid;
 	border-radius: 8px;
 	background-color: white;
 	padding: 20px;
@@ -172,15 +191,15 @@ header {
 .btn-container {
 	position: absolute;
 	padding: 0 20px;
-	top: -47px;
+	top: -46px;
 	left: 0;
 	z-index: 1;
-	width: 30%;
+	width: 33%;
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 3px solid;
+	border: 4px solid;
 	border-bottom: none;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
@@ -206,9 +225,13 @@ header {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	top: -95%;
-	left: 2%;
+	top: -97%;
+	left: 3%;
 	z-index: 0;
+}
+
+.shadow .card {
+	border: 3px solid;
 }
 
 .top-left-radius-none {
@@ -219,7 +242,6 @@ header {
 	width: 100%;
 	height: 100%;
 	color: black;
-	padding: 10px;
 	background-color: white;
 	padding: 0 75px 25px;
 }
@@ -233,34 +255,76 @@ header {
 }
 
 /* experience */
+
 .three-depth-card {
+	width: 100%;
+	position: relative;
+	overflow: visible;
+}
+
+.first-depth-card {
+	width: 100%;
+	border: 4px solid;
+	border-radius: 8px;
+	position: relative;
+	z-index: 3;
+}
+
+
+.card-contents {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.first-depth-card {
-	border: 3px solid;
-	border-radius: 8px;
+.contents-head-bar {
+	width: 90%;
+	height: 33px;
+	margin-top: 20px;
+	border-radius: 4px;
 }
 
 .experience {
-	margin-top: 0;
-	margin-bottom: 20px;
+	padding: 26px 75px 25px;
 }
 
 .experience-list {
-	margin-left: 10px;
+	padding: 20px 60px 25px;
 }
 
-.experience-list>li {
-	margin-bottom: 20px;
+.experience-list>li:not(:last-child) {
+	padding-bottom: 30px;
 }
 
+.second-depth-card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	border: 4px solid;
+	z-index: -1;
+	top: 4%;
+	left: -3%;
+}
+
+.third-depth-card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	border: 4px solid;
+	z-index: -2;
+	top: 8%;
+	left: -6%;
+}
+
+/* progress 쓸때 써야하는거 */
 progress {
 	appearance: none;
 	-webkit-appearance: none;
+	width: 90%;
 }
 
 /* 전체 바 */
@@ -312,7 +376,7 @@ footer {
 	gap: 10px;
 	justify-content: center;
 	align-items: center;
-	font-size: 2.4rem;
+	font-size: 100%;
 }
 
 .semi-bold {
@@ -331,6 +395,17 @@ footer {
 
 	100% {
 		transform: rotate(0);
+	}
+
+}
+
+@keyframes no-moving-rotate {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 
 }
