@@ -1,17 +1,3 @@
-html {
-	font-size: 10px;
-}
-
-h2 {
-	text-align: center;
-	font-size: 4.4rem;
-	font-weight: 600;
-}
-
-p {
-	font-size: 2.4rem;
-}
-
 .purple {
 	background-color: #be95c4;
 }
@@ -110,25 +96,25 @@ header {
 }
 
 .profile-text {
-	position: absolute;
+	position: relative;
 	z-index: 1;
 }
 
 .my_name {
-	font-size: 600%;
+	font-size: clamp(28px, 5vw, 60px);
 	font-weight: bold;
 }
 
 .my_mbti {
 	text-align: center;
-	font-size: 440%;
+	font-size: clamp(20px, 4.5vw, 44px);
 	font-weight: 600;
 }
 
 .name-bg {
 	width: 50%;
 	position: relative;
-	transform: translate(49%, -30%);
+	transform: translate(50%, -70%);
 	z-index: 0;
 }
 
@@ -137,7 +123,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	transform: translateY(-60%);
+	transform: translateY(-100%);
 }
 
 .header-down-left>img {
@@ -147,12 +133,6 @@ header {
 .header-down-right>img {
 	width: 50%;
 	margin-left: 50%;
-}
-
-/* contact 위치 */
-.contact {
-	position: absolute;
-	top: 80%;
 }
 
 /* 메인 그리드 */
