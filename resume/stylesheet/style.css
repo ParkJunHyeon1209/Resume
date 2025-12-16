@@ -83,7 +83,6 @@ header {
 
 .header-up-right>img {
 	width: 40%;
-
 	animation: no-moving-rotate 5s linear infinite;
 }
 
@@ -98,7 +97,6 @@ header {
 
 .profile-photo-circle {
 	width: 30%;
-	/* height: 25%; */
 	border-radius: 50%;
 	border: 5px solid #575757;
 	background-color: black;
@@ -157,8 +155,7 @@ header {
 
 .header-down-left>img {
 	width: 50%;
-	/* max-width: 250px; */
-	/* animation: no-moving-rotate 10s linear infinite; */
+	animation: no-moving-rotate 10s linear infinite;
 }
 
 
@@ -190,6 +187,7 @@ header {
 
 /* 하트 */
 .heart-wrap img {
+	flex-shrink: 0;
 	width: 70%;
 	height: 70%;
 	position: relative;
@@ -515,6 +513,16 @@ header {
 	transform: translateX(-5.55%);
 }
 
+.main-experience-img:hover .scroll-container {
+	background-image: linear-gradient(to bottom, rgba(170, 170, 170, 0), rgba(0, 0, 0, 0.8));
+}
+
+.main-experience-img:hover .scroll {
+	opacity: 1;
+	transform: translateY(-30%);
+	animation: up-down 1s ease-in-out infinite;
+}
+
 .practice-image {
 	width: 100%;
 	height: 100%;
@@ -523,6 +531,7 @@ header {
 	flex-direction: column;
 	gap: 20px;
 	overflow-y: scroll;
+	position: relative;
 }
 
 .practice-image::-webkit-scrollbar {
@@ -543,10 +552,29 @@ header {
 	background: #c72fdc;
 }
 
-.practice-image>img {
+.netfilx {
 	width: 100%;
 	height: 50%;
 }
+
+.scroll-container {
+	position: absolute;
+	width: 96.5%;
+	height: 80%;
+	bottom: 2.5%;
+	pointer-events: none;
+}
+
+.scroll {
+	width: 30%;
+	position: absolute;
+	bottom: -8%;
+	left: 35%;
+	opacity: 0;
+	transform: translateY(0);
+	transition: opacity 0.3s, transform 0.3s;
+}
+
 
 /* strength */
 .main-strength {
@@ -664,5 +692,15 @@ footer {
 
 	33%, 100% {
 		opacity: 0.3;
+	}
+}
+
+@keyframes up-down {
+	from {
+		transform: translateY(-30%);
+	}
+
+	to {
+		transform: translateY(0);
 	}
 }
