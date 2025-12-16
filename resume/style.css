@@ -22,8 +22,8 @@
 	background-color: #fe5037;
 }
 
-.yellow {
-	background-color: #ffc513;
+.purple2 {
+	background-color: #A674AD;
 }
 
 .white {
@@ -253,6 +253,8 @@ header {
 	height: 100%;
 	color: black;
 	background-color: white;
+	border: 4px solid;
+	border-radius: 8px;
 	padding: 0 75px;
 }
 
@@ -265,7 +267,6 @@ header {
 }
 
 /* experience */
-
 .first-depth-card {
 	width: 100%;
 	position: relative;
@@ -324,13 +325,44 @@ header {
 	left: -6%;
 }
 
-/* skills시작 */
 .contents-head-bar:last-child {
 	margin-bottom: 23px;
 }
 
+/* skills시작 */
+.under-depth-card-wrap {
+	position: relative;
+	z-index: 1;
+}
+
+.under-depth-card {
+	width: 100%;
+	padding: 20px;
+	border: 4px solid;
+	border-radius: 8px;
+}
+
+.under-card-contents {
+	border: 4px solid;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+.progress-wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
 /* progress 쓸때 써야하는거 */
-progress {
+.gage {
 	appearance: none;
 	-webkit-appearance: none;
 	width: 90%;
@@ -338,29 +370,66 @@ progress {
 
 /* 전체 바 */
 .gage::-webkit-progress-bar {
-	background-color: #1e1c1c;
+	background-color: #d0cbcb;
 	border-radius: 10px;
 }
 
 /* 진행 바 */
 .html::-webkit-progress-value {
-	background-color: #193ccb;
+	background-color: #fc2c2c;
 	border-radius: 10px;
 }
 
 .js::-webkit-progress-value {
-	background-color: #9cd517;
+	background-color: #fb9c3c;
 	border-radius: 10px;
 }
 
 .jq::-webkit-progress-value {
-	background-color: #d67515;
+	background-color: #1f9716;
 	border-radius: 10px;
 }
 
 .back::-webkit-progress-value {
-	background-color: #bf0c60;
+	background-color: #383bf4;
 	border-radius: 10px;
+}
+
+.back {
+	margin-bottom: 10px;
+}
+
+.first-under-depth {
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	top: 7%;
+	left: 5%;
+	border: 3px solid;
+	border-radius: 6px;
+	z-index: -1;
+}
+
+.second-under-depth {
+	position: absolute;
+	width: 80%;
+	height: 100%;
+	top: 14%;
+	left: 10%;
+	border: 3px solid;
+	border-radius: 6px;
+	z-index: -2;
+}
+
+.practice-image {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.practice-image>img {
+	width: 100%;
+	height: 20vh;
 }
 
 /* strength */
@@ -374,8 +443,9 @@ progress {
 
 .main-strength-deco>img {
 	width: 25%;
-	position: relative;
-	left: 80%;
+	max-width: 150px;
+	position: absolute;
+	right: 0;
 	transform: translateY(-100%);
 	z-index: 1;
 }
