@@ -1,0 +1,166 @@
+.play-list-container {
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0f;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.play-list-container h3 {
+    font-size: 22px;
+}
+
+.play-list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+.play-listitem {
+    display: flex;
+    gap: 10px;
+}
+
+.video-thumbnail {
+    position: relative;
+    height: 100%;
+}
+
+.preview-thumbnail {
+    border-radius: 7px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.hover-img-wrap {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hover-img-wrap .hover-img {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.video-thumbnail .video-time {
+    position: absolute;
+    font-size: 12px;
+    border-radius: 5px;
+    word-spacing: 0.48px;
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.6);
+    right: 4px;
+    bottom: 4px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.have-note {
+    display: flex;
+    gap: 4px;
+}
+
+.info {
+    width: 100%;
+}
+
+.ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.main-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f1f1f1;
+    line-height: normal;
+    letter-spacing: -0.45px;
+    margin-bottom: 4px;
+}
+
+.writer {
+    color: #aaa;
+    font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", Arial,
+        sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.39px;
+    margin-bottom: 6px;
+}
+
+.view-upload {
+    display: flex;
+    gap: 14px;
+    color: #AAA;
+    font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", Arial,
+        sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.view-upload .view-count::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-left: 7px;
+    transform: translateY(-25%);
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
+
+.new-video {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    padding: 2px 3px;
+
+    width: 54px;
+    color: #aaa;
+    font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", Arial,
+        sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu-btn {
+    width: 16px;
+    height: 16px;
+    color: white;
+}
+
+.play-list li:hover .hover-img {
+    opacity: 1;
+}
+
+.play-list li:hover .video-time {
+    opacity: 0;
+}
+
+.play-list li:hover .preview-thumbnail {
+    opacity: 0.5;
+}
