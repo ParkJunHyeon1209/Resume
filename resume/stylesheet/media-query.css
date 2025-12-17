@@ -3,6 +3,10 @@
         padding: 0 80px;
     }
 
+    .name-bg-container::before {
+        left: -2%;
+    }
+
     .main-experience-img {
         width: 100%;
         transform: translateX(0.1%);
