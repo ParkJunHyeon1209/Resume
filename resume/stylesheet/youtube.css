@@ -29,7 +29,6 @@
 }
 
 .preview-thumbnail {
-    /* width: 100%; */
     border-radius: 7px;
     opacity: 1;
     transition: opacity 0.3s;

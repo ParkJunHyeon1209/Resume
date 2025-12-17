@@ -1,0 +1,245 @@
+@media screen and (max-width: 1280px) and (min-width: 769px) {
+    .contents-list {
+        padding: 0 80px;
+    }
+
+    .main-experience-img {
+        width: 100%;
+        transform: translateX(0.1%);
+        order: 1;
+    }
+
+    .scroll {
+        width: 20%;
+        left: 40%;
+    }
+
+    .main-experience {
+        order: 1;
+        width: 100%;
+        transform: translateX(1.9%);
+    }
+
+    .main-strength {
+        transform: translateX(-1.2%);
+    }
+
+    .star {
+        transform: translateX(-10%);
+    }
+
+    .main-education {
+        order: 1;
+        margin-bottom: 200px;
+        width: 80%;
+        height: 120%;
+        top: -70%;
+        left: 20%;
+        transform: rotate(-10deg);
+    }
+
+    .to-move-education-text {
+        left: 25%;
+    }
+
+    .monster-ball {
+        order: 1;
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    footer {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contents-list {
+        padding: 0 80px;
+        min-width: 400px;
+    }
+
+    .main-experience-img {
+        width: 100%;
+        transform: translateX(0.1%);
+        order: 1;
+    }
+
+    .scroll {
+        width: 30%;
+        left: 35%;
+    }
+
+    .main-experience {
+        order: 1;
+        width: 100%;
+        transform: translateX(1.9%);
+    }
+
+    .main-strength {
+        transform: translateX(-1.2%);
+    }
+
+    .main-education {
+        order: 1;
+        margin-bottom: 200px;
+        width: 80%;
+        height: 90%;
+        top: -80%;
+        left: 20%;
+        transform: rotate(-10deg);
+    }
+
+    .to-move-education-text {
+        left: 25%;
+    }
+
+    .monster-ball {
+        order: 1;
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    footer {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .header-bottom-right {
+        height: 100%;
+        min-height: 0px;
+    }
+
+    .contents-list {
+        padding: 0 40px;
+        min-width: 400px;
+    }
+
+    .main-experience-img {
+        width: 100%;
+        transform: translateX(0.1%);
+        order: 1;
+    }
+
+    .scroll {
+        width: 30%;
+        left: 35%;
+    }
+
+    .main-experience {
+        order: 1;
+        width: 100%;
+        transform: translateX(1.9%);
+    }
+
+    .main-strength {
+        transform: translateX(-1.2%);
+    }
+
+    .main-education {
+        order: 1;
+        margin-bottom: 200px;
+        width: 80%;
+        height: 90%;
+        top: -80%;
+        left: 20%;
+        transform: rotate(-10deg);
+    }
+
+    .to-move-education-text {
+        left: 25%;
+    }
+
+    .monster-ball {
+        order: 1;
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    footer {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 649px) {
+
+    .header-bottom-right {
+        height: 100%;
+        min-height: 0px;
+    }
+
+    .name-bg-container {
+        width: 100%;
+    }
+
+    .name-bg-container::before {
+        left: -5%;
+    }
+
+    .contents {
+        padding: 0 35px;
+    }
+
+    .strength~p {
+        padding: 20px 40px 9.5px;
+    }
+
+    .contents-list {
+        padding: 0 40px;
+        min-width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .main-experience-img {
+        width: 100%;
+        transform: translateX(0.1%);
+        order: 1;
+    }
+
+    .scroll {
+        width: 30%;
+        left: 35%;
+    }
+
+    .play-list-container {
+        width: 100%;
+
+    }
+
+    .main-experience {
+        order: 1;
+        width: 100%;
+        transform: translateX(5%);
+    }
+
+    .main-strength {
+        transform: translateX(-1.2%);
+    }
+
+    .main-education {
+        order: 1;
+        margin-bottom: 200px;
+        width: 80%;
+        height: 90%;
+        top: -80%;
+        left: 20%;
+        transform: rotate(-10deg);
+    }
+
+    .to-move-education-text {
+        left: 15%;
+    }
+
+    .monster-ball {
+        order: 1;
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    footer {
+        height: 175px;
+    }
+}
