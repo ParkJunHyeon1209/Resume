@@ -166,3 +166,5 @@
 .play-list li:hover .preview-thumbnail {
     opacity: 0.5;
 }
+
+@media (max-width: 550px) {}
