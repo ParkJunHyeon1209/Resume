@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css');
+
 .purple {
 	background-color: #be95c4;
 }
@@ -249,6 +251,7 @@ header {
 	column-gap: 105px;
 	row-gap: 60px;
 	padding: 0 20px;
+	position: relative;
 }
 
 /* about me 초록색 */
@@ -663,7 +666,6 @@ header {
 
 .monster-ball {
 	width: 200%;
-	margin-bottom: 0;
 	display: flex;
 	align-items: flex-end;
 }
