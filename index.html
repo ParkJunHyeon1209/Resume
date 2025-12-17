@@ -10,10 +10,10 @@
     <meta name="author" content="박준현" />
 
     <title>Park Jun Hyeon | Frontend Developer Portfolio</title>
-    <link rel="stylesheet" href="./stylesheet/reset.css" />
-    <link rel="stylesheet" href="./stylesheet/style.css" />
-    <link rel="stylesheet" href="./stylesheet/youtube.css" />
-    <link rel="stylesheet" href="./stylesheet/media-query.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/youtube.css" />
+    <link rel="stylesheet" href="./styles/media-query.css" />
   </head>
   <body>
     <div id="wrap">
@@ -21,7 +21,7 @@
         <header>
           <div class="profile">
             <div class="profile-photo-circle">
-              <img src="./resume-image/profile.png" alt="내 프로필 사진" />
+              <img src="./assets/profile.png" alt="내 프로필 사진" />
             </div>
             <section class="profile-name-tag">
               <div class="profile-text">
@@ -31,7 +31,7 @@
               <div class="name-bg-container">
                 <img
                   class="name-bg"
-                  src="./resume-image/name-bg.png"
+                  src="./assets/name-bg.png"
                   alt="별 달린 핑크색 이름 배경"
                 />
               </div>
@@ -42,7 +42,7 @@
               <div class="heart-wrap white">
                 <span>
                   <img
-                    src="./resume-image/red-heart.png"
+                    src="./assets/red-heart.png"
                     alt="빨강하트"
                     class="heart first-heart"
                     aria-hidden="true"
@@ -50,7 +50,7 @@
                 </span>
                 <span>
                   <img
-                    src="./resume-image/yellow-heart.png"
+                    src="./assets/yellow-heart.png"
                     alt="노랑하트"
                     class="heart second-heart"
                     aria-hidden="true"
@@ -58,7 +58,7 @@
                 </span>
                 <span>
                   <img
-                    src="./resume-image/green-heart.png"
+                    src="./assets/green-heart.png"
                     alt="초록하트"
                     class="heart third-heart"
                     aria-hidden="true"
@@ -90,9 +90,11 @@
                     프런트엔드를 선택했습니다.
                   </p>
                   <p>
-                    단순히 화면을 구현하는 것이 아닌 UX를 고려하여 디자인과
-                    기능이 조화를 이루는 UI를 선호합니다. 개발자의 개성이
-                    드러나지만, UX를 해치지 않는 것을 목표로 하고 있습니다.
+                    단순히 화면을 구현하는 것이 아닌
+                    <span class="emphasize">UX</span>를 고려하여 디자인과 기능이
+                    조화를 이루는 <span class="emphasize">UI</span> 를
+                    선호합니다. 개발자의 개성이 드러나지만, UX를 해치지 않는
+                    것을 목표로 하고 있습니다.
                   </p>
                 </div>
               </div>
@@ -121,11 +123,11 @@
                 <h2 class="experience">Experience</h2>
                 <ul class="experience-list">
                   <li>
-                    <p>2025.11 ~ 2026.04:</p>
+                    <p class="study-period">2025.11 ~ 2026.04:</p>
                     <p>ESTsoft 11기 프런트엔드 개발자 부트 캠프 참여</p>
                   </li>
                   <li>
-                    <p>2023.09 ~ 2023.12:</p>
+                    <p class="study-period">2023.09 ~ 2023.12:</p>
                     <p>
                       학창 시절 캡스톤 디자인 프로젝트에서 아두이노 개발, UI
                       일부를 구현
@@ -135,7 +137,7 @@
                 <div class="contents-head-bar purple"></div>
               </div>
               <div class="second-depth-card purple"></div>
-              <div class="third-depth-card purple"></div>
+              <div class="third-depth-card purple2"></div>
             </div>
           </section>
           <!-- main-experience end -->
@@ -424,14 +426,14 @@
                     </div>
                     <!-- 유튜브 플레이리스트 끝 -->
                     <img
-                      src="./resume-image/netflix-result.png"
+                      src="./assets/netflix-result.png"
                       alt="내가 만든 넷플릭스 페이지"
                       class="netfilx"
                     />
                   </div>
                   <div class="scroll-container">
                     <img
-                      src="./resume-image/scroll.png"
+                      src="./assets/scroll.png"
                       alt="스크롤이 가능함을 알려주기 위한 아이콘"
                       class="scroll"
                     />
@@ -453,17 +455,23 @@
                 <div class="contents-head-bar red"></div>
                 <h2 class="strength">Strength</h2>
                 <p>
-                  모르는 부분은 솔직하게 질문하고, 아는 부분은 공유하려 노력
+                  모르는 부분은
+                  <span class="emphasize">솔직하게</span> 질문하고, 아는 부분은
+                  공유하려 노력
                 </p>
                 <p>
-                  작업을 시작하면 마무리 지으려고 노력하며, 작은 기능까지
+                  작업을 시작하면 마무리 지으려고
+                  <span class="emphasize">노력</span>하며, 작은 기능까지
                   구현하려 노력
                 </p>
-                <p>왜 이런 구조가 필요한지 이해하며 구현하는 학습 방식</p>
+                <p>
+                  왜 이런 <span class="emphasize">구조</span>가 필요한지
+                  <span class="emphasize">이해</span>하며 구현하는 학습 방식
+                </p>
                 <div class="contents-head-bar red"></div>
               </div>
               <div class="second-depth-card red"></div>
-              <div class="third-depth-card red"></div>
+              <div class="third-depth-card red2"></div>
             </div>
           </section>
           <!-- main-strength-end -->
@@ -486,7 +494,7 @@
 
           <div class="monster-ball">
             <img
-              src="./resume-image/pocketmon.png"
+              src="./assets/pocketmon.png"
               alt="찌리리공(포켓몬스터 포켓몬)"
             />
           </div>
