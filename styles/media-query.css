@@ -1,20 +1,50 @@
-@media screen and (max-width: 1280px) and (min-width: 769px) {
-    .contents-list {
-        padding: 0 80px;
+@media screen and (max-width: 1159px) {
+    h2 {
+        font-size: clamp(24px, 4.5vw, 44px);
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: clamp(14px, 3vw, 24px);
+    }
+
+    p {
+        font-size: clamp(14px, 3vw, 24px);
     }
 
     .name-bg-container::before {
-        left: -2%;
+        left: -1%;
     }
 
-    .main-experience-img {
-        width: 100%;
-        transform: translateX(0.1%);
-        order: 1;
+    .contents-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 80px;
+        gap: 80px;
+    }
+
+    .main-strength {
+        left: 5%;
     }
 
     .progress-wrap:hover>h3 {
-        font-size: 24px;
+        font-size: 27px;
+    }
+
+    .main-experience {
+        order: 1;
+        position: relative;
+        left: 2%;
+    }
+
+    .main-experience-img {
+        order: 2;
+        left: 2.5%;
+    }
+
+    .scroll-container {
+        height: 40%;
     }
 
     .scroll {
@@ -22,39 +52,20 @@
         left: 40%;
     }
 
-    .main-experience {
-        order: 1;
-        width: 100%;
-        transform: translateX(1.9%);
-    }
-
-    .main-strength::after {
-        width: 140px;
-        height: 140px;
-    }
-
-    .main-strength {
-        transform: translateX(-1.2%);
-    }
-
     .main-education {
-        order: 1;
-        margin-bottom: 200px;
-        width: 80%;
-        height: 110%;
-        top: -75%;
-        left: 20%;
-        transform: rotate(-10deg);
-    }
-
-    .to-move-education-text {
+        order: 3;
+        position: absolute;
+        width: 65%;
+        height: 250px;
+        top: 84%;
         left: 25%;
+        z-index: 1;
     }
 
     .monster-ball {
-        order: 1;
+        order: 4;
+        margin-top: 200px;
         width: 90%;
-        margin-bottom: 0;
     }
 
     footer {
@@ -62,21 +73,17 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .contents-list {
-        padding: 0 80px;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        grid-template-rows: auto auto auto auto 10%;
+@media screen and (max-width: 850px) {
+    .header-bottom-right {
+        min-height: 70px;
     }
 
     .contents {
-        padding: 0 50px;
+        padding: 0 45px;
     }
 
-    .main-experience-img {
-        width: 100%;
-        transform: translateX(0.1%);
-        order: 1;
+    .progress-wrap:hover>h3 {
+        font-size: 25px;
     }
 
     .scroll {
@@ -84,367 +91,127 @@
         left: 35%;
     }
 
-    .main-experience {
-        order: 1;
-        width: 100%;
-        transform: translateX(1.9%);
-    }
-
-    .main-strength {
-        transform: translateX(-1.2%);
-    }
-
-    .main-strength::after {
-        width: 110px;
-        height: 110px;
-    }
-
     .main-education {
-        order: 1;
-        margin-bottom: 100px;
-        width: 80%;
-        height: 90%;
-        top: 70%;
-        left: 20%;
-        transform: rotate(-10deg);
+        top: 84.5%;
+        left: 22%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header-bottom-right {
+        min-height: 50px;
     }
 
     .progress-wrap:hover>h3 {
         font-size: 22px;
     }
 
-    .to-move-education-text {
-        left: 25%;
-    }
-
-    .monster-ball {
-        order: 1;
-        width: 90%;
-        margin-top: 100px;
-    }
-
-    .monster-ball>img {
-        bottom: -10%;
-    }
-
-    footer {
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .header-bottom-right {
-        height: 100%;
-        min-height: 0px;
-    }
-
-    .contents-list {
-        padding: 0 40px;
-        min-width: 400px;
-    }
-
     .main-experience-img {
-        width: 100%;
-        transform: translateX(0.1%);
-        order: 1;
-    }
-
-    .scroll {
-        width: 30%;
-        left: 35%;
-    }
-
-    .main-experience {
-        order: 1;
-        width: 100%;
-        transform: translateX(1.9%);
-    }
-
-    .main-strength {
-        transform: translateX(-1.2%);
-    }
-
-    .main-strength::after {
-        width: 100px;
-        height: 100px;
+        left: 1.5%;
     }
 
     .main-education {
-        order: 1;
-        width: 80%;
-        height: 90%;
-        top: 80%;
-        left: 20%;
-        transform: rotate(-10deg);
-    }
-
-    .to-move-education-text {
-        left: 25%;
-    }
-
-    .monster-ball {
-        order: 1;
-        width: 90%;
-        margin-bottom: 0;
-    }
-
-    footer {
-        height: 200px;
+        height: 210px;
     }
 }
 
-@media screen and (min-width: 393px) and (max-width: 520px) {
-
-    h2 {
-        font-size: clamp(24px, 4.5vw, 44px);
-        font-weight: 600;
+@media screen and (max-width: 500px) {
+    .header-bottom-right {
+        min-height: 40px;
     }
 
-    h3 {
-        font-size: clamp(16px, 2vw, 24px);
+    .contents-list {
+        padding: 0 40px;
     }
 
-    p {
-        font-size: clamp(14px, 2vw, 24px);
+    .contents {
+        padding: 0 30px;
     }
 
     .progress-wrap:hover>h3 {
-        font-size: 18px;
+        font-size: 17px;
     }
 
-    .header-bottom-right {
-        width: 110px;
-        height: 100%;
-        min-height: 0px;
-    }
-
-    .name-bg-container {
-        width: 100%;
-    }
-
-    .profile::before {
-        width: 15%;
-        height: 20%;
-    }
-
-    .profile::after {
-        width: 23%;
-        height: 28%;
-    }
-
-    .name-bg-container::before {
-        width: 20%;
-        height: 60%;
-        left: -5%;
-    }
-
-    .name-bg {
-        width: 75%;
-        transform: translate(15%, -60%);
+    .strength~p {
+        padding: 10px 30px 8px;
     }
 
     .main-strength::after {
-        width: 95px;
-        height: 95px;
-    }
-
-    .contents {
-        padding: 0 35px;
-    }
-
-    .strength~p {
-        padding: 20px 40px 9.5px;
-    }
-
-    .card-contents p:last-child {
-        align-items: flex-start;
-    }
-
-    .contents-list {
-        padding: 0 40px;
-        min-width: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    .main-experience-img {
-        width: 100%;
-        transform: translateX(0.1%);
-        order: 1;
-    }
-
-    .scroll {
-        width: 30%;
-        left: 35%;
-    }
-
-    .experience-list {
-        padding: 10px 40px 8px;
-    }
-
-    .main-experience {
-        order: 1;
-        width: 100%;
-        transform: translateX(5%);
-    }
-
-    .main-strength {
-        transform: translateX(-1.2%);
-    }
-
-    .main-education {
-        order: 1;
-        width: 90%;
-        height: 100%;
-        top: 70%;
-        left: 10%;
-        transform: rotate(-10deg);
-    }
-
-    .to-move-education-text {
-        left: 15%;
-    }
-
-    .monster-ball {
-        order: 1;
-        width: 90%;
-    }
-
-    footer {
-        height: 175px;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 392px) {
-    h3 {
-        font-size: 14px;
-    }
-
-    .name-bg {
-        width: 100%;
-        transform: translate(-1%, -50%);
-    }
-
-    .progress-wrap:hover>h3 {
-        font-size: 15px;
-    }
-
-    .header-bottom-right {
-        width: 70px;
-        height: 40px;
-        transform: translateY(-20%);
-    }
-
-    .name-bg-container {
-        width: 100%;
-    }
-
-    .profile::before {
-        width: 15%;
-        height: 20%;
-    }
-
-    .profile::after {
-        width: 23%;
-        height: 28%;
-    }
-
-    .progress-wrap:hover>h3 {
-        font-size: 16px;
-    }
-
-    .profile-text {
-        transform: translateY(30%);
-    }
-
-    .name-bg-container::before {
-        width: 20%;
-        height: 60%;
-        left: -5%;
-    }
-
-    .contents {
-        padding: 0 35px;
-    }
-
-    .strength~p {
-        padding: 20px 40px 9.5px;
-    }
-
-    .contents-list {
-        padding: 0 40px;
-        min-width: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    .main-experience-img {
-        width: 100%;
-        transform: translateX(0.1%);
-        order: 1;
-    }
-
-    .scroll {
-        width: 30%;
-        left: 35%;
-    }
-
-    .main-experience {
-        order: 1;
-        width: 100%;
-        transform: translateX(5%);
-    }
-
-    .main-strength {
-        transform: translateX(-1.2%);
+        width: 75px;
+        height: 75px;
+        bottom: 6%;
     }
 
     .experience-list {
         padding: 10px 30px 8px;
     }
 
-    .main-strength::after {
-        width: 80px;
-        height: 80px;
+    .scroll-container {
+        width: 93%;
+        height: 50%;
+    }
+
+    .scroll {
+        width: 45%;
+        left: 27%;
     }
 
     .main-education {
-        order: 1;
-        width: 100%;
-        height: 90%;
-        top: 60%;
-        left: 10%;
-        transform: rotate(-10deg);
-    }
-
-    .to-move-education-text {
-        left: 15%;
-    }
-
-    .monster-ball {
-        order: 1;
+        width: 70%;
+        height: 200px;
+        left: 20%;
+        top: 83.5%;
     }
 
     footer {
-        height: 175px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .name-bg {
+        width: 70%;
+        transform: translate(20%, -65%);
     }
 
-    .monster-ball>img {
-        width: 100%;
-        bottom: -9%;
+    .main-education {
+        height: 190px;
+        top: 83.75%;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile::before {
+        width: 15%;
+        height: 20%;
     }
 
-    @keyframes rotate {
-        0% {
-            transform: rotate(0);
-        }
+    .profile::after {
+        width: 20%;
+        height: 25%;
+    }
 
-        50% {
-            margin-left: 80%;
-            transform: rotate(360deg);
-        }
+    .name-bg-container::before {
+        width: 20%;
+    }
 
-        100% {
-            transform: rotate(0);
-        }
+    .heart-wrap {
+        padding: 5px;
 
+    }
+
+    .heart {
+        transform: scale(1.2);
+    }
+
+    .main-education {
+        top: 84.75%;
+        width: 80%;
+        left: 10%;
+    }
+
+    .scroll {
+        left: 30%;
     }
 }
