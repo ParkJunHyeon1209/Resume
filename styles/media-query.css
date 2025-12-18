@@ -192,6 +192,30 @@
         height: 25%;
     }
 
+    .main-strength {
+        left: 10%;
+    }
+
+    .main-experience {
+        left: 7%;
+    }
+
+    .btn-container {
+        padding: 0 10px;
+        height: 30px;
+        top: -26px;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .name-bg {
+        width: 80%;
+        transform: translate(10%, -70%);
+    }
+
     .name-bg-container::before {
         width: 20%;
     }
@@ -206,12 +230,33 @@
     }
 
     .main-education {
-        top: 84.75%;
+        top: 83%;
         width: 80%;
         left: 10%;
     }
 
     .scroll {
         left: 30%;
+    }
+
+    .monster-ball>img {
+        width: 100%;
+        animation: rotate 3s ease-in-out infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0);
+        }
+
+        50% {
+            margin-left: 70%;
+            transform: rotate(360deg);
+        }
+
+        100% {
+            transform: rotate(0);
+        }
+
     }
 }

@@ -161,7 +161,7 @@ header {
 	width: 15%;
 	height: 50%;
 	bottom: -10%;
-	left: -5%;
+	left: -3%;
 	animation: spin 20s linear infinite;
 }
 
@@ -543,16 +543,6 @@ header {
 	transform: translateX(-5.55%);
 }
 
-.main-experience-img:hover .scroll-container {
-	background-image: linear-gradient(to bottom, rgba(170, 170, 170, 0), rgba(0, 0, 0, 0.8));
-}
-
-.main-experience-img:hover .scroll {
-	opacity: 1;
-	transform: translateY(-30%);
-	animation: up-down 0.8s ease-in-out alternate infinite;
-}
-
 .practice-image {
 	width: 100%;
 	max-height: 406px;
@@ -594,6 +584,7 @@ header {
 	bottom: 2.5%;
 	pointer-events: none;
 	border-radius: 8px;
+	background-image: linear-gradient(to bottom, rgba(170, 170, 170, 0), rgba(0, 0, 0, 0.8));
 }
 
 .scroll {
@@ -601,9 +592,7 @@ header {
 	position: absolute;
 	bottom: -8%;
 	left: 35%;
-	opacity: 0;
-	transform: translateY(0);
-	transition: opacity 0.3s, transform 0.3s;
+	animation: up-down 0.8s ease-in-out alternate infinite;
 }
 
 
