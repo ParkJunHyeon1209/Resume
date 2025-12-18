@@ -68,6 +68,10 @@
         width: 90%;
     }
 
+    .monster-ball>img {
+        transform: translateY(13%);
+    }
+
     footer {
         height: 250px;
     }
@@ -112,6 +116,11 @@
 
     .main-education {
         height: 210px;
+        top: 87%;
+    }
+
+    .monster-ball {
+        margin-top: 100px;
     }
 }
 
@@ -160,7 +169,16 @@
         width: 70%;
         height: 200px;
         left: 20%;
-        top: 83.5%;
+        top: 84.5%;
+    }
+
+    .monster-ball {
+        width: 75%;
+    }
+
+    .monster-ball>img {
+        width: 100%;
+        animation: rotate 3s ease-in-out infinite;
     }
 
     footer {
@@ -176,7 +194,7 @@
 
     .main-education {
         height: 190px;
-        top: 83.75%;
+        top: 85%;
         width: 65%;
     }
 }
@@ -230,7 +248,7 @@
     }
 
     .main-education {
-        top: 83%;
+        top: 85.5%;
         width: 80%;
         left: 10%;
     }
@@ -239,24 +257,7 @@
         left: 30%;
     }
 
-    .monster-ball>img {
-        width: 100%;
-        animation: rotate 3s ease-in-out infinite;
-    }
-
-    @keyframes rotate {
-        0% {
-            transform: rotate(0);
-        }
-
-        50% {
-            margin-left: 70%;
-            transform: rotate(360deg);
-        }
-
-        100% {
-            transform: rotate(0);
-        }
-
+    .monster-ball {
+        width: 60%;
     }
 }
