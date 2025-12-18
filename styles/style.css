@@ -666,7 +666,6 @@ header {
 	bottom: -13%;
 	width: 15%;
 	max-width: 100px;
-	transform-origin: center;
 	animation: rotate 6s ease-in-out infinite;
 }
 

@@ -68,12 +68,23 @@
         width: 90%;
     }
 
-    .monster-ball>img {
-        transform: translateY(13%);
-    }
-
     footer {
         height: 250px;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: translateY(12%) rotate(0);
+        }
+
+        50% {
+            margin-left: 100%;
+            transform: translateY(12%) rotate(360deg);
+        }
+
+        100% {
+            transform: translateY(12%) rotate(0);
+        }
     }
 }
 
