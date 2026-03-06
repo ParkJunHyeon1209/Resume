@@ -1,0 +1,289 @@
+@media screen and (max-width: 1159px) {
+    h2 {
+        font-size: clamp(24px, 4.5vw, 44px);
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: clamp(14px, 3vw, 24px);
+    }
+
+    p {
+        font-size: clamp(14px, 3vw, 24px);
+    }
+
+    .name-bg-container::before {
+        left: -1%;
+    }
+
+    .main-about-me {
+        left: 0.5%;
+    }
+
+    .main-skills {
+        position: relative;
+        left: 0.5%;
+    }
+
+    .contents-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 80px;
+        gap: 80px;
+    }
+
+    .main-strength {
+        left: 5%;
+    }
+
+    .progress-wrap:hover>h3 {
+        font-size: 27px;
+    }
+
+    .main-experience {
+        order: 1;
+        position: relative;
+        width: 96.7%;
+        left: 5.2%;
+    }
+
+    .main-experience-img {
+        order: 2;
+        left: 2.9%;
+    }
+
+    .scroll-container {
+        height: 40%;
+    }
+
+    .scroll {
+        width: 20%;
+        left: 40%;
+    }
+
+    .main-education {
+        order: 3;
+        position: absolute;
+        width: 65%;
+        height: 250px;
+        top: 84%;
+        left: 25%;
+        z-index: 1;
+    }
+
+    .monster-ball {
+        order: 4;
+        margin-top: 200px;
+        width: 90%;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: translateY(12%) rotate(0);
+        }
+
+        50% {
+            margin-left: 100%;
+            transform: translateY(12%) rotate(360deg);
+        }
+
+        100% {
+            transform: translateY(12%) rotate(0);
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header-bottom-right {
+        min-height: 70px;
+    }
+
+    .contents {
+        padding: 0 45px;
+    }
+
+    .progress-wrap:hover>h3 {
+        font-size: 25px;
+    }
+
+    .scroll {
+        width: 30%;
+        left: 35%;
+    }
+
+    .main-education {
+        top: 84.5%;
+        left: 22%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header-bottom-right {
+        min-height: 50px;
+    }
+
+    .progress-wrap:hover>h3 {
+        font-size: 22px;
+    }
+
+    .main-experience-img {
+        left: 1.5%;
+    }
+
+    .main-education {
+        height: 210px;
+        top: 87%;
+    }
+
+    .monster-ball {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-bottom-right {
+        min-height: 40px;
+    }
+
+    .contents-list {
+        padding: 0 40px;
+    }
+
+    .contents {
+        padding: 0 30px;
+    }
+
+    .progress-wrap:hover>h3 {
+        font-size: 17px;
+    }
+
+    .strength~p {
+        padding: 10px 30px 8px;
+    }
+
+    .main-strength::after {
+        width: 75px;
+        height: 75px;
+        bottom: 6%;
+    }
+
+    .experience-list {
+        padding: 10px 30px 8px;
+    }
+
+    .scroll-container {
+        width: 93%;
+        height: 50%;
+    }
+
+    .scroll {
+        width: 45%;
+        left: 27%;
+    }
+
+    .main-education {
+        width: 70%;
+        height: 200px;
+        left: 20%;
+        top: 84.5%;
+    }
+
+    .monster-ball {
+        width: 75%;
+    }
+
+    .monster-ball>img {
+        width: 100%;
+        animation: rotate 3s ease-in-out infinite;
+    }
+
+    footer {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .profile::before {
+        width: 15%;
+        height: 20%;
+    }
+
+    .profile::after {
+        width: 20%;
+        height: 25%;
+    }
+
+    .name-bg-container::before {
+        width: 20%;
+    }
+
+    .name-bg {
+        width: 70%;
+        transform: translate(20%, -65%);
+    }
+
+    .header-bottom-right {
+        width: 25%;
+        min-height: 50px;
+    }
+
+    .main-education {
+        height: 190px;
+        top: 85%;
+        width: 65%;
+    }
+
+    .heart-wrap {
+        padding: 5px;
+
+    }
+
+    .heart {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-strength {
+        left: 10%;
+    }
+
+    .main-experience {
+        left: 7%;
+    }
+
+    .btn-container {
+        padding: 0 10px;
+        height: 30px;
+        top: -26px;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .name-bg {
+        width: 80%;
+        transform: translate(10%, -70%);
+    }
+
+    .main-education {
+        top: 85.5%;
+        width: 80%;
+        left: 10%;
+    }
+
+    .scroll {
+        left: 30%;
+    }
+
+    .monster-ball {
+        width: 60%;
+    }
+}

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="UX를 고려한 UI 구현을 지향하는 프런트엔드(프론트엔드) 예비 개발자 박준현의 포트폴리오입니다."
+    />
+    <meta name="author" content="박준현" />
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:type" content="Portfolio" />
+    <title>Park Jun Hyeon | Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/youtube.css" />
+    <link rel="stylesheet" href="./styles/media-query.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="layout-top">
+        <header>
+          <div class="profile">
+            <div class="profile-photo-circle">
+              <img src="./assets/profile.png" alt="내 프로필 사진" />
+            </div>
+            <section class="profile-name-tag">
+              <div class="profile-text">
+                <h1 class="my_name">Park Jun Hyeon</h1>
+                <h2 class="my_mbti">MBTI: INTP</h2>
+              </div>
+              <div class="name-bg-container">
+                <img
+                  class="name-bg"
+                  src="./assets/name-bg.png"
+                  alt="별 달린 핑크색 이름 배경"
+                />
+              </div>
+            </section>
+          </div>
+          <div class="header-bottom-icon">
+            <div class="header-bottom-right">
+              <div class="heart-wrap white">
+                <span>
+                  <img
+                    src="./assets/red-heart.png"
+                    alt="빨강하트"
+                    class="heart first-heart"
+                    aria-hidden="true"
+                  />
+                </span>
+                <span>
+                  <img
+                    src="./assets/yellow-heart.png"
+                    alt="노랑하트"
+                    class="heart second-heart"
+                    aria-hidden="true"
+                  />
+                </span>
+                <span>
+                  <img
+                    src="./assets/green-heart.png"
+                    alt="초록하트"
+                    class="heart third-heart"
+                    aria-hidden="true"
+                  />
+                </span>
+              </div>
+              <div class="heart-wrap-deco first white"></div>
+              <div class="heart-wrap-deco second white"></div>
+            </div>
+            <!-- header-bottom-right end -->
+          </div>
+          <!-- header-bottom-icon end -->
+        </header>
+
+        <main class="contents-list">
+          <section class="main-about-me">
+            <div class="card-wrap left">
+              <div class="btn-container green">
+                <div class="circle red"></div>
+                <div class="circle orange2"></div>
+                <div class="circle white"></div>
+              </div>
+              <div class="card green top-left-radius-none">
+                <div class="contents">
+                  <h2>About me</h2>
+                  <p>
+                    프런트엔드 개발자 취업을 희망하는 예비 개발자입니다. 웹
+                    화면을 통해 서비스를 경험하는 과정에 흥미를 느껴
+                    프런트엔드를 선택했습니다.
+                  </p>
+                  <p>
+                    단순히 화면을 구현하는 것이 아닌
+                    <span class="emphasize">UX</span>를 고려하여 디자인과 기능이
+                    조화를 이루는 <span class="emphasize">UI</span>를
+                    선호합니다. 개발자의 개성이 드러나지만, UX를 해치지 않는
+                    것을 목표로 하고 있습니다.
+                  </p>
+                </div>
+              </div>
+              <!-- card end -->
+            </div>
+            <!-- card-wrap end -->
+            <div class="shadow">
+              <div class="card-wrap left">
+                <div class="btn-container white">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card">
+                  <div class="shadow-contents"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- main-about-me end -->
+
+          <section class="main-experience">
+            <div class="first-depth-card">
+              <div class="card-contents white">
+                <div class="contents-head-bar purple"></div>
+                <h2 class="experience">Experience</h2>
+                <ul class="experience-list">
+                  <li>
+                    <p class="study-period">2025.11 ~ 2026.04</p>
+                    <p>ESTsoft 11기 프런트엔드 개발자 부트 캠프 참여</p>
+                  </li>
+                  <li>
+                    <p class="study-period">2023.09 ~ 2023.12</p>
+                    <p>
+                      학창 시절 캡스톤 디자인 프로젝트에서 아두이노 개발, 웹
+                      서비스 UI 일부 구현
+                    </p>
+                  </li>
+                </ul>
+                <div class="contents-head-bar purple"></div>
+              </div>
+              <div class="second-depth-card purple"></div>
+              <div class="third-depth-card purple2"></div>
+            </div>
+          </section>
+          <!-- main-experience end -->
+
+          <section class="main-skills">
+            <div class="under-depth-card-wrap">
+              <div class="under-depth-card orange">
+                <div class="under-card-contents white">
+                  <h2>Skills</h2>
+                  <article class="publishing progress-wrap">
+                    <h3>HTML & CSS</h3>
+                    <progress
+                      max="100"
+                      value="80"
+                      class="gage html"
+                      aria-label="HTML 및 CSS 숙련도"
+                    >
+                      80%
+                    </progress>
+                  </article>
+                  <article class="javascript progress-wrap">
+                    <h3>JavaScript</h3>
+                    <progress
+                      max="100"
+                      value="50"
+                      class="gage js"
+                      aria-label="JavaScript 숙련도"
+                    >
+                      50%
+                    </progress>
+                  </article>
+                  <article class="jquery progress-wrap">
+                    <h3>jQuery</h3>
+                    <progress
+                      max="100"
+                      value="30"
+                      class="gage jq"
+                      aria-label="jQuery 숙련도"
+                    >
+                      50%
+                    </progress>
+                  </article>
+                  <article class="backlanguage progress-wrap">
+                    <h3>Java & Python</h3>
+                    <progress
+                      max="100"
+                      value="60"
+                      class="gage back"
+                      aria-label="Python 및 Java 숙련도"
+                    >
+                      60%
+                    </progress>
+                  </article>
+                </div>
+                <!-- card-contents end -->
+              </div>
+              <div class="first-under-depth orange2"></div>
+              <div class="second-under-depth orange2"></div>
+              <!-- underdepth-card end -->
+            </div>
+            <!-- under-depth-card-wrap edn -->
+          </section>
+          <!-- main-skills end -->
+
+          <div class="main-experience-img">
+            <div class="under-depth-card-wrap">
+              <div class="under-depth-card purple">
+                <div class="under-card-contents2 white">
+                  <div class="practice-image">
+                    <!-- 유튜브 플레이 리스트 -->
+                    <div class="play-list-container">
+                      <ul class="play-list">
+                        <li>
+                          <a href="#">
+                            <!-- 첫번째 리스트 li로 감싸서 하는게 어색해서 div로 감쌈 -->
+                            <div class="play-listitem">
+                              <!-- 영상 썸네일 표현 -->
+                              <div class="video-thumbnail">
+                                <img
+                                  class="preview-thumbnail"
+                                  src="https://picsum.photos/200/120?random=1"
+                                  alt="랜덤 이미지 1"
+                                />
+                                <!-- 타임라인 -->
+                                <p class="video-time have-note">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-music-note"
+                                    viewBox="0 0 16 16"
+                                  >
+                                    <path
+                                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M9 3v10H8V3z"
+                                    />
+                                    <path
+                                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                                    />
+                                  </svg>
+                                  3:00:49
+                                </p>
+                                <!-- 호버 이미지 -->
+                                <div class="hover-img-wrap">
+                                  <img
+                                    class="hover-img"
+                                    src="https://img.icons8.com/?size=100&id=59760&format=png&color=000000"
+                                    alt="hover시 나오는 시계"
+                                  />
+                                  <img
+                                    class="hover-img"
+                                    src="https://img.icons8.com/?size=100&id=GoEXNL1E4Ef7&format=png&color=000000"
+                                    alt="hover시 나오는 재생목록"
+                                  />
+                                </div>
+                              </div>
+                              <!-- 영상 정보 -->
+                              <div class="info">
+                                <h3 class="main-title ellipsis">
+                                  💿 이찬혁 노래모음 | 신곡 포함, 3시간 | Lee
+                                  CHANHYUK playlist
+                                </h3>
+                                <p class="writer">JINSEE</p>
+                                <div class="view-upload">
+                                  <span class="view-count">조회수 5.1만회</span>
+                                  <span class="upload-time">1 개월 전</span>
+                                </div>
+                              </div>
+                              <!-- 메뉴 버튼 -->
+                              <div class="btn-wrap">
+                                <div class="menu-btn">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-three-dots-vertical"
+                                    viewBox="0 0 16 16"
+                                  >
+                                    <path
+                                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                              <!-- btn-wrap -->
+                            </div>
+                            <!-- play-list-item -->
+                          </a>
+                        </li>
+                        <!-- 2번 리스트 -->
+                        <li>
+                          <a href="#">
+                            <div class="play-listitem">
+                              <div class="video-thumbnail">
+                                <img
+                                  class="preview-thumbnail"
+                                  src="https://picsum.photos/200/120?random=2"
+                                  alt="랜덤 이미지 2"
+                                />
+                                <p class="video-time">2:37:38</p>
+                                <div class="hover-img-wrap">
+                                  <img
+                                    class="hover-img"
+                                    src="https://img.icons8.com/?size=100&id=59760&format=png&color=000000"
+                                    alt="hover시 나오는 시계"
+                                  />
+                                  <img
+                                    class="hover-img"
+                                    src="https://img.icons8.com/?size=100&id=GoEXNL1E4Ef7&format=png&color=000000"
+                                    alt="hover시 나오는 재생목록"
+                                  />
+                                </div>
+                              </div>
+                              <div class="info">
+                                <h3 class="main-title ellipsis">
+                                  [무한도전] 재~밌는 놀~이 😁 단풍 아래에서 시
+                                  쓰고 운동회 가는 가족놀이이지 않을까 싶은
+                                </h3>
+                                <p class="writer">오분순삭</p>
+                                <div class="view-upload">
+                                  <span class="view-count">조회수 11만회</span>
+                                  <span class="upload-time">5일 전</span>
+                                </div>
+                                <div class="new-video">새 동영상</div>
+                              </div>
+                              <div class="btn-wrap">
+                                <div class="menu-btn">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-three-dots-vertical"
+                                    viewBox="0 0 16 16"
+                                  >
+                                    <path
+                                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- 3번 리스트 -->
+                        <li>
+                          <a href="#">
+                            <div class="play-listitem">
+                              <div class="video-thumbnail">
+                                <img
+                                  class="preview-thumbnail"
+                                  src="https://picsum.photos/200/120?random=3"
+                                  alt="랜덤 이미지 3"
+                                />
+                                <p class="video-time have-note">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-music-note"
+                                    viewBox="0 0 16 16"
+                                  >
+                                    <path
+                                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M9 3v10H8V3z"
+                                    />
+                                    <path
+                                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                                    />
+                                  </svg>
+                                  1:35:21
+                                </p>
+                                <div class="hover-img-wrap">
+                                  <img
+                                    class="hover-img"
+                                    src="https://img.icons8.com/?size=100&id=59760&format=png&color=000000"
+                                    alt="hover시 나오는 시계"
+                                  />
+                                  <img
+                                    class="hover-img"
+                                    src="https://img.icons8.com/?size=100&id=GoEXNL1E4Ef7&format=png&color=000000"
+                                    alt="hover시 나오는 재생목록"
+                                  />
+                                </div>
+                              </div>
+                              <div class="info">
+                                <h3 class="main-title ellipsis">
+                                  🎄 Playlist 🎅 🎄 크리스마스가 오고있어!
+                                  설레는 K-팝 캐롤 모음
+                                </h3>
+                                <p class="writer">얌플리 Yam's Playlist</p>
+                                <div class="view-upload">
+                                  <span class="view-count">조회수 3.9만회</span>
+                                  <span class="upload-time">6일 전</span>
+                                </div>
+                              </div>
+                              <div class="btn-wrap">
+                                <div class="menu-btn">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-three-dots-vertical"
+                                    viewBox="0 0 16 16"
+                                  >
+                                    <path
+                                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- 유튜브 플레이리스트 끝 -->
+                    <img
+                      src="./assets/netflix-result.png"
+                      alt="내가 만든 넷플릭스 페이지"
+                      class="netfilx"
+                    />
+                  </div>
+                  <div class="scroll-container">
+                    <img
+                      src="./assets/scroll.png"
+                      alt="스크롤이 가능함을 알려주기 위한 아이콘"
+                      class="scroll"
+                    />
+                  </div>
+                </div>
+                <!-- card-contents end -->
+              </div>
+              <div class="first-under-depth purple2"></div>
+              <div class="second-under-depth purple2"></div>
+              <!-- underdepth-card end -->
+            </div>
+            <!-- under-depth-card-wrap end -->
+          </div>
+          <!-- main-experience-img end -->
+
+          <section class="main-strength">
+            <div class="first-depth-card">
+              <div class="card-contents white">
+                <div class="contents-head-bar red"></div>
+                <h2 class="strength">Strength</h2>
+                <p>
+                  모르는 부분은
+                  <span class="emphasize">솔직하게</span> 질문하고, 아는 부분은
+                  공유하려 노력
+                </p>
+                <p>
+                  작업을 시작하면 반드시 마무리 짓는
+                  <span class="emphasize">책임감</span>을 가지고 있으며,
+                  <span class="emphasize">세세한</span>
+                  기능까지 완성도 있게 구현하려 노력
+                </p>
+                <p>
+                  왜 이런 <span class="emphasize">구조</span>가 필요한지
+                  <span class="emphasize">이해</span>하며
+                  <span class="emphasize">구현</span>하는 학습 방식
+                </p>
+                <div class="contents-head-bar red"></div>
+              </div>
+              <div class="second-depth-card red"></div>
+              <div class="third-depth-card red2"></div>
+            </div>
+          </section>
+          <!-- main-strength-end -->
+
+          <section class="main-education">
+            <div class="education-contents white">
+              <div class="to-move-education-text">
+                <h2>Education</h2>
+                <div class="education-text">
+                  <p class="university">Daejeon University: 2019 ~ 2025</p>
+                  <p class="major">Major: Information Security</p>
+                  <p class="license">
+                    License: Engineer Information Processing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- main-education end -->
+
+          <div class="monster-ball">
+            <img
+              src="./assets/pocketmon.png"
+              alt="찌리리공(포켓몬스터 포켓몬)"
+            />
+          </div>
+        </main>
+      </div>
+      <!-- .layout-box end -->
+
+      <footer>
+        <section class="write-information">
+          <h3 class="footer-date semi-bold">&copy;2025.12.12</h3>
+          <p class="footer-name">PJH; Frontend Developer</p>
+        </section>
+
+        <section class="contact-container">
+          <h3 class="footer-contact semi-bold">Contact</h3>
+          <address>
+            <p class="footer-email">
+              e-mail:
+              <a href="mailto:pjh140123@gmail.com">pjh140123@gmail.com</a>
+            </p>
+            <p class="footer-git">
+              GitHub:
+              <a href="https://github.com/ParkJunHyeon1209">ParkJunHyeon1209</a>
+            </p>
+          </address>
+        </section>
+
+        <section class="footer-goal">
+          <h3 class="foot-goal semi-bold">Goal</h3>
+          <p>Make interfaces that feel natural to use.</p>
+        </section>
+      </footer>
+    </div>
+    <!-- #wrap end -->
+  </body>
+</html>
